@@ -24,6 +24,7 @@ header {
   display: flex;
   gap: 3rem;
   margin-left: 40%;
+  list-style:none;
 }
 .nav-list > li > a {
   color: #003466;
