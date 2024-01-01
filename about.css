@@ -3,11 +3,11 @@
   padding: 0;
   margin: 0;
   font-family: "Barlow Semi Condensed", sans-serif;
-  /* list-style: none; */
+
   text-decoration: none;
 }
 body {
-  width: 100vw;
+  width: 100%;
 }
 /* header */
 header {
@@ -24,6 +24,7 @@ header {
   display: flex;
   gap: 3rem;
   margin-left: 40%;
+  list-style: none;
 }
 .nav-list > li > a {
   color: #003466;
@@ -171,6 +172,7 @@ footer img {
     justify-content: center;
     gap: 2rem;
     transition: all 0.55s ease;
+    list-style: none;
   }
   .nav-list > li > a {
     color: white;
