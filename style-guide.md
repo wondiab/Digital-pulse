@@ -2,9 +2,9 @@ See [this link](https://zachgoll.github.io/holy-grail-css-layout/) for the compl
 
 ## Colors
 
-- Header / Footer Background Color - #09335b white
-- Text/Icon Color - #003466 blue
-- Link text color - #dbad96 golden
+- Header / Footer Background Color - #fff white
+- Text/Icon Color - #08355e blue
+- Link text color - ##7c8084 grey
 
 ### Layout "frame" colors
 
