@@ -9,7 +9,7 @@
 .main-container {
   width: 100%;
   display: grid;
-  grid-template-rows: 700px 400px 700px auto;
+  grid-template-rows: 700px 1300px 700px auto;
 }
 /* container 1 */
 .cont-1 {
@@ -73,14 +73,21 @@ header {
 }
 /* container 2 */
 .cont-2 {
-  font-size: clamp(3rem, 5vw, 7rem);
-  font-weight: 600;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10%;
   color: #08355e;
+}
+.cont-2-1 {
+  font-weight: 600;
+  font-size: clamp(3rem, 5vw, 7rem);
+  text-align: center;
+  padding: 20% 10%;
+  padding-bottom: 0;
+}
+.cont-2-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 10% 20%;
+  font-size: clamp(1.25rem, 0.3571428571vw + 1.1696428571rem, 1.4375rem);
 }
 /* container 3 */
 .cont-3 {
@@ -110,7 +117,7 @@ header {
 }
 .cont-4 > h1::after {
   content: "";
-  background: #303ef7;
+  background: #08355e;
   width: 100px;
   height: 5px;
   position: absolute;
@@ -213,6 +220,24 @@ header {
     url(./images/vid.jpg);
   background-size: cover;
 }
+.service:nth-child(8):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(32, 89, 143, 0.525) 0%,
+      rgba(0, 53, 102, 0.535) 100%
+    ),
+    url(./images/graphics-design.jpg);
+  background-size: cover;
+}
+.service:nth-child(9):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(32, 89, 143, 0.525) 0%,
+      rgba(0, 53, 102, 0.535) 100%
+    ),
+    url(./images/market-research.jpg);
+  background-size: cover;
+}
 /* footer */
 footer {
   width: 100%;
@@ -238,6 +263,10 @@ footer img {
 }
 /* responsive mode */
 @media (max-width: 1535px) {
+  .main-container {
+    display: grid;
+    grid-template-rows: 600px 1200px 700px auto;
+  }
   .cont-1 img {
     width: 35%;
     height: auto;
@@ -249,7 +278,7 @@ footer img {
 @media (max-width: 1440px) {
   .main-container {
     display: grid;
-    grid-template-rows: 600px 400px 700px auto;
+    grid-template-rows: 600px 1100px 700px auto;
   }
   .cont-1 img {
     width: 40%;
@@ -259,7 +288,7 @@ footer img {
 @media (max-width: 996px) {
   .main-container {
     display: grid;
-    grid-template-rows: 575px 400px 700px auto;
+    grid-template-rows: 575px 950px 700px auto;
   }
   .cont-1 img {
     width: 45%;
@@ -308,7 +337,7 @@ footer img {
 @media (max-width: 576px) {
   .main-container {
     display: grid;
-    grid-template-rows: 550px 400px 700px auto;
+    grid-template-rows: 550px 1200px 700px auto;
   }
   .nav-list.open {
     right: 20px;
@@ -323,5 +352,11 @@ footer img {
   }
   .title-2 {
     font-size: 5vw;
+  }
+}
+@media (max-width: 430px) {
+  .main-container {
+    display: grid;
+    grid-template-rows: 550px 1300px 700px auto;
   }
 }
