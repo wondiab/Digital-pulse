@@ -32,7 +32,9 @@ const sr = ScrollReveal({
 sr.reveal(".header-img", { delay: 200, origin: "top" });
 sr.reveal(".title", { delay: 300, origin: "top" });
 sr.reveal(".title-2", { delay: 400, origin: "top" });
-sr.reveal(".cont-2 p", { delay: 100, origin: "top" });
+sr.reveal(".cont-2-1 ", { delay: 100, origin: "top" });
+sr.reveal(".cont-2-2 .p-1", { delay: 100, origin: "left" });
+sr.reveal(".cont-2-2 .p-2", { delay: 100, origin: "right" });
 sr.reveal(".cont-3 p", { delay: 100, origin: "bottom" });
 sr.reveal(".cont-4 .service", { delay: 100, origin: "bottom" });
 sr.reveal(".wrapper h1", { delay: 100, origin: "bottom" });
